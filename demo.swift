@@ -889,19 +889,19 @@ protocol singleprotocol: basicvar,basicfun {
 
 //-------Distionary----//
 
- var practise = [String:String]()
- practise["Abhishek"]="Mishra"
- practise["Mulayam"] = "Yadav"
- practise["sarvesh"] = "yadav"
- practise["sarvesh"] = "Patel"
-//  if let oldValue = practise.updateValue("patel",forKey:"sarvesh"){
-//      print("the old surname of sarvesh is \(oldValue)")
-//  }
- practise.removeValue(forKey:"sarvesh")
- for (firstName,lastname) in practise{
-     print("this \(firstName) surname is \(lastname)")
+//  var practise = [String:String]()
+//  practise["Abhishek"]="Mishra"
+//  practise["Mulayam"] = "Yadav"
+//  practise["sarvesh"] = "yadav"
+//  practise["sarvesh"] = "Patel"
+// //  if let oldValue = practise.updateValue("patel",forKey:"sarvesh"){
+// //      print("the old surname of sarvesh is \(oldValue)")
+// //  }
+//  practise.removeValue(forKey:"sarvesh")
+//  for (firstName,lastname) in practise{
+//      print("this \(firstName) surname is \(lastname)")
      
- }
+//  }
  
 
 
@@ -930,4 +930,63 @@ protocol singleprotocol: basicvar,basicfun {
 // print(setPratise)
 
 
-//------Tuple------//
+//-------enumeration------//
+
+// enum socialPlatform : String {
+//     case whatApp = "pretty picture"
+//     case instagram = "nice UI"
+//     case linkedIn = "Best platform for job"
+//     case facebook = "first social media for us"
+// }
+
+// func shareImage(on platForm : socialPlatform){
+//     switch platForm{
+//         case .whatApp : 
+//             print("Share image on whatapp")
+        
+//         case .instagram : 
+//             print("Share image on instagram")
+        
+//         case .linkedIn : 
+//             print("Share image on linkedIn")
+        
+//         case .facebook : 
+//             print("Share image on facebook")
+        
+       
+        
+//     }
+// }
+
+// // shareImage(on : .whatApp)
+
+// func Myopinion(on opinion:socialPlatform){
+//     print(opinion.rawValue)
+// }
+
+// Myopinion(on: .facebook)
+
+
+
+
+
+// enum socialMediaPlatform{
+//     case twitter(follower: Int)
+//     case youtube(subscriber:Int)
+//     case facebook
+//     case linkedIn
+// }
+
+// func schollerShipGetOrNot(for platform:socialMediaPlatform){
+//     switch platform{
+//         case .twitter(let follower) where follower>10_000:
+//             print("he/she is allow the schollership from twitter")
+//         case .youtube(let subscriber) where subscriber>50_000:
+//             print("he/she is allow the schollership from youtube")
+//         case .youtube,.twitter,.facebook,.linkedIn:
+//             print("he/she is not allow to get schollership")
+//     }
+// }
+
+// schollerShipGetOrNot(for: .youtube(subscriber: 100000))
+
