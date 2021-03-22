@@ -887,6 +887,47 @@ protocol singleprotocol: basicvar,basicfun {
 //===========JUST FOR TRY==================//
 //====================================================================
 
+//-------Distionary----//
+
  var practise = [String:String]()
- practise["name"]="Abhishek"
- print(practise["surname",default:"Mishra"])
+ practise["Abhishek"]="Mishra"
+ practise["Mulayam"] = "Yadav"
+ practise["sarvesh"] = "yadav"
+ practise["sarvesh"] = "Patel"
+//  if let oldValue = practise.updateValue("patel",forKey:"sarvesh"){
+//      print("the old surname of sarvesh is \(oldValue)")
+//  }
+ practise.removeValue(forKey:"sarvesh")
+ for (firstName,lastname) in practise{
+     print("this \(firstName) surname is \(lastname)")
+     
+ }
+ 
+
+
+//------Array--------//
+
+// var arrayPractise = [Int]()
+// arrayPractise.append(23)
+// arrayPractise.insert(24,at:1)
+// for item in arrayPractise{
+//     print("\(item)")
+// }
+
+//------Set ------//
+
+// var setPratise = Set<String>()
+// setPratise.insert("abhishek")
+// setPratise.insert("abhishek")
+// setPratise.insert("Mishra")
+
+// // for item in setPratise{
+// //     if item=="abhishek"{
+// //         setPratise.remove(item)
+// //     }
+// // }
+// print(setPratise.contains("abhishek"))
+// print(setPratise)
+
+
+//------Tuple------//
