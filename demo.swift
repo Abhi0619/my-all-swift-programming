@@ -876,3 +876,17 @@ protocol singleprotocol: basicvar,basicfun {
 
 // try! checkPassword("password")
 // print("yeah! password is true")
+
+
+
+
+
+
+
+//====================================================================
+//===========JUST FOR TRY==================//
+//====================================================================
+
+ var practise = [String:String]()
+ practise["name"]="Abhishek"
+ print(practise["surname",default:"Mishra"])
