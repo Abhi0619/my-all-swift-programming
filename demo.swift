@@ -759,19 +759,19 @@ import Swift;
 //========PROTOCOL IN SWIFT=========//
 
 
-protocol basicvar {
-    var a:Int{get set}
+// protocol basicvar {
+//     var a:Int{get set}
     
-}
+// }
 
-protocol basicfun {
-    func fun()
-}
+// protocol basicfun {
+//     func fun()
+// }
 
-protocol singleprotocol: basicvar,basicfun {
+// protocol singleprotocol: basicvar,basicfun {
 
     
-}
+// }
 
 
 //=======EXTENSION IN SWIFT=======//
@@ -990,3 +990,30 @@ protocol singleprotocol: basicvar,basicfun {
 
 // schollerShipGetOrNot(for: .youtube(subscriber: 100000))
 
+
+//===========Array Problem=======//
+
+// var a = [23,24,35,12,34,56,22,21]
+// for i in 0..<a.count{
+//     for j in 0..<a.count-1{
+//         if a[j]>a[j+1]{
+//             var temp=a[j]
+//             a[j]=a[j+1]
+//             a[j+1]=temp
+//         }
+//     }
+// }
+// print(a)
+
+
+// var a = [23,24,35,12,34,56,22,21]
+// var b = [23,14,56,67,56,56,22,21]
+// var c = Set<Int>()
+// for i in 0..<a.count{
+//     for j in 0..<b.count{
+//         if a[i] == b[j] {
+//             c.insert(a[i])
+//         }
+//     }
+// }
+// print(c)
