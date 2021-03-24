@@ -57,7 +57,30 @@
 
 //-------basic clourse-------//
 
-var fullName = {(name:String,surname:String) -> String in 
-    return "my name is \(name) and surname is \(surname)"
-}
-print(fullName("Abhishek","Mishra"))
+// var fullName = {(name:String,surname:String) -> String in 
+//     return "my name is \(name) and surname is \(surname)"
+// }
+// print(fullName("Abhishek","Mishra"))
+
+//-----closer in function-----//
+// var closer = { (name: String) in
+//     return "hello from \(name)"
+// }
+
+// func function(action: (String,Int) -> String){
+//     print(action("abhishek",20))
+// }
+
+// function(action:closer)
+
+
+//------traling closers-------//
+
+// func trainigFuntion(action: (String,String)->String){
+//     print("in traling function")
+//     print(action("Abhishek","Mishra"))
+// }
+
+// trainigFuntion { 
+//     return "my name is \($0) \($1)"
+// }
