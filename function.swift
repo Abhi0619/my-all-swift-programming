@@ -45,11 +45,19 @@
 //     print(fibbnoic(i))
 // }
 
+//---------inout parameter---------//
 
-func square(_ number: inout Int){
-    number = number*2
+// func square(_ number: inout Int){
+//     number = number*2
+// }
+
+// var myNum = 10
+// square(&myNum)
+// print(myNum)
+
+//-------basic clourse-------//
+
+var fullName = {(name:String,surname:String) -> String in 
+    return "my name is \(name) and surname is \(surname)"
 }
-
-var myNum = 10
-square(&myNum)
-print(myNum)
+print(fullName("Abhishek","Mishra"))
