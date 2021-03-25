@@ -104,3 +104,60 @@
 // var chessBoxing = olampicGame(olmpic_Game:"Chessboxing",isOlympicGame: false)
 // chessBoxing.olmpic_Game="boxing"
 // print(chessBoxing.OlympicStatus)
+
+
+//--------Property observes---------//
+
+
+// struct Task {
+//     var name: String
+//     var amount: Int {
+        
+//         didSet {
+//             print("this \(amount) of task is completer")
+//         }
+        
+//     }
+    
+// }
+
+// var taskCompleted = Task(name:"any Task",amount:0)
+// taskCompleted.amount = 10;
+// taskCompleted.amount = 25;
+// taskCompleted.amount = 50;
+
+
+// --------======initializer in Structure------=========//
+
+
+// struct BasicIntilizers {
+//     var name : String
+//     var age : Int
+//     init(name:String,age:Int){
+//         self.name = name
+//         self.age = age
+//         print("hello my name is \(name) and my age is \(age)")
+//     }
+// }
+// let basicinti = BasicIntilizers(name:"abhishek", age:20)
+
+final class basicClass {
+    
+    func basicInfo(_ name:String, _ age:Int){
+        print("my name is \(name) and  my age is \(age)")
+    }
+}
+
+class mainClass : basicClass{
+    func surname(_ surn:String)
+    {
+       print("Surname of my is \(surn)")
+       
+
+    }
+}
+
+var fullDescription = mainClass()
+fullDescription.basicInfo("Abhishek",20)
+fullDescription.surname("Mishra")
+
