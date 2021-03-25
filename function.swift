@@ -84,3 +84,23 @@
 // trainigFuntion { 
 //     return "my name is \($0) \($1)"
 // }
+
+//---=====computer properties in Structure-----====//
+
+
+// struct olampicGame {
+//    var olmpic_Game:String
+//    var isOlympicGame:Bool
+//    var OlympicStatus : String{
+//        if isOlympicGame{
+//            return "\(olmpic_Game) is in Olympic tounament"
+//        }
+//        else{
+//            return "\(olmpic_Game) is not in olymapic game"
+//        }
+//    }
+// }
+
+// var chessBoxing = olampicGame(olmpic_Game:"Chessboxing",isOlympicGame: false)
+// chessBoxing.olmpic_Game="boxing"
+// print(chessBoxing.OlympicStatus)
