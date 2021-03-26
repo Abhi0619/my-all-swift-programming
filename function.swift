@@ -141,23 +141,119 @@
 // }
 // let basicinti = BasicIntilizers(name:"abhishek", age:20)
 
-final class basicClass {
+// final class basicClass {
     
-    func basicInfo(_ name:String, _ age:Int){
-        print("my name is \(name) and  my age is \(age)")
-    }
-}
+//     func basicInfo(_ name:String, _ age:Int){
+//         print("my name is \(name) and  my age is \(age)")
+//     }
+// }
 
-class mainClass : basicClass{
-    func surname(_ surn:String)
-    {
-       print("Surname of my is \(surn)")
+// class mainClass : basicClass{
+//     func surname(_ surn:String)
+//     {
+//        print("Surname of my is \(surn)")
        
 
-    }
-}
+//     }
+// }
 
-var fullDescription = mainClass()
-fullDescription.basicInfo("Abhishek",20)
-fullDescription.surname("Mishra")
+// var fullDescription = mainClass()
+// fullDescription.basicInfo("Abhishek",20)
+// fullDescription.surname("Mishra")
 
+
+
+
+// =--------- basic Optional in website -----------= //
+
+
+// func basicFunction( _ name:String) -> String?{
+//     if name == "abhishek"
+//     {
+//         return nil
+//     }
+//     else{
+//         return "good"
+//     }
+// }
+
+// basicFunction("abhishek")
+
+
+// -------==== Switch case with the helip enums -----====//
+
+
+// enum weatherType {
+//     case sun
+//     case cloud
+//     case rainy
+//     case wind(speed:Int)
+//     case snow
+// }
+
+// func checkWeatherType(_ weather: weatherType) -> String?{
+//     switch weather {
+//     case .sun:
+//         return nil
+//     case .wind(let speed) where speed < 10:
+//         return "winde season"
+//     case .cloud, .rainy, .wind, .snow:
+//         return "hate"
+//     default:
+//         return "no choose from user side"
+        
+//     }
+// }
+
+// print(checkWeatherType(.wind(speed: 15)))
+
+// struct personalDetail {
+//     var firstname : String
+//     var lastName : String
+//     var age : Int
+// }
+
+// let detail = personalDetail(firstname : "Abhishek", lastName : "Mishra", age : 20)
+
+// var changeDetail = detail
+
+// changeDetail.firstname = "Sunny"
+
+// print(detail)
+// print(changeDetail)
+
+// struct Person {
+//     var cloth : String {
+        
+//         willSet {
+//             updateUI(msg : "changing \(cloth) to \(newValue)")
+//         }
+        
+//         didSet {
+//             updateUI(msg : "changing \(oldValue) to \(cloth)")
+//         }
+        
+//     }
+// }
+
+// func updateUI(msg : String){
+//     print(msg) 
+// }
+
+// var obj = Person(cloth: "T-shirts")
+// obj.cloth = "mini skrits"
+
+
+
+// func optionalChaining(year : Int) -> String? {
+//     switch year {
+//     case 2020: return "current year"
+//     case 2021: return "next year"
+//     default: return nil
+        
+//     }
+// }
+
+// // var obj = optionalChaining(year: 2022)?.uppercased()
+// var obj = optionalChaining(year: 2022) ?? "unKnown"
+// print("the year is \(obj)")
