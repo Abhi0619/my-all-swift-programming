@@ -257,3 +257,69 @@
 // // var obj = optionalChaining(year: 2022)?.uppercased()
 // var obj = optionalChaining(year: 2022) ?? "unKnown"
 // print("the year is \(obj)")
+
+
+
+var a: Int?
+a = 10
+
+// IF LET
+
+// if let number = a {
+//     print("variable a is containing value \(a)")
+// } else{
+//     print("variable a is empty")
+    
+// }
+ 
+ //FORSE unwrapped
+
+// var b = a!
+
+// ----GUARD ======//
+// func optionalchange(number : Int?)
+// {
+//     guard let number = number else {
+//         print("going out side of function")
+//         return
+//     }
+//     print("the value of number is \(number)")
+    
+// }
+
+// optionalchange(number : a)
+
+
+//==========Fliter=======//
+
+struct phone {
+    var type:String
+    var price : Float
+    var color : String
+}
+
+var myiMaxPro = phone(type: "iMaxPro",price : 2000.23,color: "Grey")
+var myiPhone6Plus = phone(type: "iPhone6Plus",price: 2003.29,color:"light grey")
+var myiPhone7 = phone(type: "iPhone7",price: 2009.29,color:"dark bluish grey")
+var myiPhone = phone(type: "iPhone7",price: 2009.29,color:"dark bluish grey")
+var myiPad = phone(type: "iPad",price: 2023.29,color:"light blue")
+var myAppleWatch = phone(type: "AppleWatch",price: 2389.29,color:"light bluish green")
+
+let myDevice = [myiMaxPro,myiPhone6Plus,myiPhone7,myiPhone,myiPad,myAppleWatch]
+
+// let filterDeviceL = myDevice.filter({return $0.type == "iPhone7"})
+// // var filterDeviceL : [phone] = [] 
+
+// // for device in myDevice{
+// //     if device.type == "iPhone7"{
+// //         filterDeviceL.append(device)
+// //     }
+// // }
+
+// print(filterDeviceL)
+
+let cenedianPrice : [Float]  = myDevice.map({return $0.price * 1.2})
+print(cenedianPrice)
+
+let totalCanadienPrice : Float = cenedianPrice.reduce(0.0 , +)
+print(totalCanadienPrice)

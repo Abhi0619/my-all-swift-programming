@@ -25,7 +25,7 @@ import Swift;
 // var c:Float=2.3
 // var d:Double=13.9
 // print(a)
-// print(Int(c))
+// print(Float(a))
 // print(d.rounded(.toNearestOrAwayFromZero))
 
 
@@ -79,11 +79,11 @@ import Swift;
 //========For loop =======//
 
 
-// var a = Int(readLine(strippingNewline: true)!)!
-// for i in 1...10{
-//     print(a,"X",i,"=",a*i)
+var a = Int(readLine(strippingNewline: true)!)!
+for i in 1...10{
+    print(a,"X",i,"=",a*i)
     
-// }
+}
 
 
 //=====while Loop=====//
