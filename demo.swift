@@ -79,11 +79,11 @@ import Swift;
 //========For loop =======//
 
 
-var a = Int(readLine(strippingNewline: true)!)!
-for i in 1...10{
-    print(a,"X",i,"=",a*i)
+// var a = Int(readLine(strippingNewline: true)!)!
+// for i in 1...10{
+//     print("\(a) X \(i) = \(a*i)")
     
-}
+// }
 
 
 //=====while Loop=====//
@@ -110,7 +110,7 @@ for i in 1...10{
 
 //======= Function in Swift =======//
 
-// func factorial(of a:Int)->Int
+// func factorial(_ a:Int)->Int
 // {
 //     var fact:Int=1
 //     let c:Int = a+1
@@ -125,7 +125,7 @@ for i in 1...10{
 //     }
 // }
 // var b=Int(readLine(strippingNewline:true)!)!
-// var ans=factorial(of: b)
+// var ans=factorial(b)
 // print(ans)
 
 
@@ -195,7 +195,7 @@ for i in 1...10{
 // class person{
 //     var name = ""
 //     var age = 0
-//     init(para1 str:String,para2 a:Int) //this is intializer it will call when we make a object of class
+//     init(_ str:String,_ a:Int) //this is intializer it will call when we make a object of class
 //     {
 //         name=str
 //         age=a
@@ -203,7 +203,7 @@ for i in 1...10{
 //     }
 // }
 
-// var a = person(para1:"abhishek",para2:21)
+// var a = person("abhishek",21)
 
 
 //=====optional====//
@@ -263,27 +263,27 @@ for i in 1...10{
 //=====Intitilizers=====//
 
 
-// class Person {
-//     var name=""
+class Person {
+    var name=""
     
-// }
-// class BlogPost {
-//     var title:String
-//     var body="hey"
-//     var author:Person
-//     init(){
-//         title="My Title"
-//         author=Person()
-//         print(title)
-//     }
-//     convenience init(customTitle:String){
-//         self.init()
-//         title=customTitle
-//         print(customTitle)
+}
+class BlogPost {
+    var title:String
+    var body="hey"
+    var author:Person
+    init(){
+        title="My Title"
+        author=Person()
+        print(title)
+    }
+    convenience init(customTitle:String){
+        self.init()
+        title=customTitle
+        print(customTitle)
 
-//     }
-// }
-//  let post = BlogPost(customTitle:"A Custom Title")   
+    }
+}
+ let post = BlogPost(customTitle:"A Custom Title")   
 
 
 
