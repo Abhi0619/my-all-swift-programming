@@ -260,8 +260,8 @@
 
 
 
-var a: Int?
-a = 10
+// var a: Int?
+// a = 10
 
 // IF LET
 
