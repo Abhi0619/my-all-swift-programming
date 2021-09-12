@@ -263,27 +263,27 @@ import Swift;
 //=====Intitilizers=====//
 
 
-class Person {
-    var name=""
+// class Person {
+//     var name=""
     
-}
-class BlogPost {
-    var title:String
-    var body="hey"
-    var author:Person
-    init(){
-        title="My Title"
-        author=Person()
-        print(title)
-    }
-    convenience init(customTitle:String){
-        self.init()
-        title=customTitle
-        print(customTitle)
+// }
+// class BlogPost {
+//     var title:String
+//     var body="hey"
+//     var author:Person
+//     init(){
+//         title="My Title"
+//         author=Person()
+//         print(title)
+//     }
+//     convenience init(customTitle:String){
+//         self.init()
+//         title=customTitle
+//         print(customTitle)
 
-    }
-}
- let post = BlogPost(customTitle:"A Custom Title")   
+//     }
+// }
+//  let post = BlogPost(customTitle:"A Custom Title")   
 
 
 
@@ -1017,3 +1017,46 @@ class BlogPost {
 //     }
 // }
 // print(c)
+
+
+
+// var dict = [
+//     "firstname" : "Abhishek",
+//     "secondName" : "Mishra"
+// ]
+
+// dict["hobby"] = "Cricket"
+// dict.removeAll()
+// for (key,value) in dict{
+    
+//     print(key+" : "+value)
+// }
+
+// var array:[Int] = [23,45,56,22,21,23,33]
+// array.sort(by: <)
+// print(array)
+
+// for i in array{
+    
+// }
+
+// ============ Completion Handler =============//
+// func handler(message:String,completion: (_ message:String) -> Void){
+//     print("your in handler function")
+//     print("Message",message)
+//     completion("you are using completion handler in function")
+//     print("we are using completion handler because if we want to return in between function then with the help of completiom handler we  can do it")
+
+// }
+
+// handler(message:"Abhishek"){ (result) in
+//     print("result:",result)
+// }
+
+// var a = "abhishek"
+// var b = Array(a)
+// var z = ""
+// for i in b{
+//     z = "\(i)" + z
+// }
+// print(z)
